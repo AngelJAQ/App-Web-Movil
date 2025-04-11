@@ -1,0 +1,19 @@
+<section class="perfil">
+  <div class="wrapper">
+    <mat-drawer-container>
+      <mat-drawer #drawer mode="over" position="start">
+        <app-left-sidebar (cerrar)="drawer.toggle()"></app-left-sidebar>
+      </mat-drawer>
+
+      <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+
+      <div class="body-perfil">
+        <div class="container mt-4">
+          <h2>Perfil de Usuario</h2>
+        </div>
+      </div>
+      <br>
+      <app-footer-app></app-footer-app>
+    </mat-drawer-container>
+  </div>
+</section>

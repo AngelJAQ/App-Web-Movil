@@ -1,0 +1,88 @@
+.wrapper {
+  height: 100vh;
+  width: 360px;
+  z-index: 100;
+  background-color: #000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-sidebar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  padding-left: 1rem;
+}
+
+.icon-close {
+  cursor: pointer;
+}
+
+.icon-close img {
+  width: 25px;
+  height: 25px;
+  filter: brightness(0) invert(1);
+}
+
+.body-sidebar {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1rem 0;
+  gap: 2rem;
+  flex-grow: 1;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.line-color {
+  width: 5px;
+  margin-right: 1rem;
+}
+
+.vertical-line {
+  width: 5px;
+  height: 60px;
+  background-color: #c00;
+  border-radius: 2px;
+  height: 100%;
+}
+
+.title-link {
+  flex-grow: 1;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.arrow-icon mat-icon {
+  font-size: 16px;
+  color: white;
+}
+
+.footer-sidebar {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+.logout {
+  flex-grow: 1;
+}
+
+.icon-logout {
+  font-size: 18px;
+  color: white;
+}
